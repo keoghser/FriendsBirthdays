@@ -1,0 +1,196 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#EAEAF2"
+    android:focusable="true"
+	android:focusableInTouchMode="true">
+       
+     <EditText
+        android:id="@+id/editNameView"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="80dp"
+        android:textSize="12dp"       
+        android:inputType="textCapWords" 
+        android:background="#B8D2FF"
+        android:paddingLeft="6dp">
+        <requestFocus />
+    </EditText>
+
+    <TextView
+           android:id="@+id/nameView"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/editNameView"
+           android:layout_alignBottom="@+id/editNameView"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="25dp"
+           android:text="@string/nameview" />
+    
+   
+    
+    
+    
+     <Button
+        android:id="@+id/editDateView"
+        android:onClick="showDatePickerDialog"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="120dp"
+        android:textSize="12dp"        
+        android:background="#B8D2FF"
+        android:gravity="left"
+        android:paddingLeft="6dp"
+        android:paddingTop="8dp"/>    
+    
+    <TextView
+           android:id="@+id/dateView"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/editDateView"
+           android:layout_alignBottom="@+id/editDateView"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="25dp"
+           android:text="@string/dateview" />
+    
+    
+    
+    
+    
+    
+    
+    <EditText
+        android:id="@+id/editPhoneView"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="160dp"
+        android:textSize="12dp"
+        android:inputType="number"
+        android:background="#B8D2FF" 
+        android:paddingLeft="6dp">        
+    </EditText>
+
+    <TextView
+           android:id="@+id/PhoneView"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/editPhoneView"
+           android:layout_alignBottom="@+id/editPhoneView"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="25dp"
+           android:text="@string/phoneview" />
+    
+    
+    
+    
+    
+    
+    <Spinner
+        android:id="@+id/editNotificationView"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="200dp"
+        android:drawSelectorOnTop="true"
+        android:textSize="12dp" 
+        android:background="#B8D2FF"/>
+
+    <TextView
+           android:id="@+id/NotificationView"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/editNotificationView"
+           android:layout_alignBottom="@+id/editNotificationView"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="25dp"
+           android:text="@string/notificationview" />
+    
+    
+   <Spinner
+        android:id="@+id/editActionView"
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="240dp"        
+        android:textSize="12dp" 
+        android:background="#B8D2FF"/>
+
+    <TextView
+           android:id="@+id/ActionView"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_alignBaseline="@+id/editActionView"
+           android:layout_alignBottom="@+id/editActionView"
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="25dp"
+           android:text="@string/actionview" /> 
+
+    
+    
+    
+    
+      
+    
+    
+    
+    
+    
+    
+     <EditText
+        android:id="@+id/editTextView"
+        android:layout_width="170dp"
+        android:layout_height="30dp"    
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="280dp"           
+        android:maxLines="4"
+        android:textSize="12dp"
+        android:inputType="textMultiLine"
+        android:background="#B8D2FF"
+        android:paddingLeft="6dp" >        
+    </EditText>
+
+    <TextView
+           android:id="@+id/pTextView"
+           android:layout_width="100dp"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="285dp" 
+           android:layout_alignParentLeft="true"
+           android:layout_marginLeft="25dp"
+           android:text="@string/pTextview"
+            />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pTextView"
+        android:layout_below="@+id/editTextView"
+        android:layout_marginTop="84dp"
+        android:text="@string/button6" 
+        android:background="#B8D2FF"
+        android:textSize="16dp"/>
+
+     <Button
+         android:id="@+id/button7"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBaseline="@+id/button6"
+         android:layout_alignBottom="@+id/button6"
+         android:layout_alignRight="@+id/editTextView"
+         android:text="@string/button7"
+         android:background="#B8D2FF"
+         android:textSize="16dp" />
+
+     
+
+</RelativeLayout>

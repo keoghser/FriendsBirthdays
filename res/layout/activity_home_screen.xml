@@ -1,0 +1,54 @@
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="#EAEAF2" 
+     >
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="60dp"
+         android:gravity="center"
+         android:text="@string/welcome" />
+     
+
+     <Button
+         android:id="@+id/button1"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/textView1"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="30dp"
+         android:text="@string/button1"
+         android:textSize="16dp" 
+         android:background="#B8D2FF"/>
+
+     <Button
+         android:id="@+id/button2"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/button1"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="60dp"
+         android:background="#B8D2FF"
+         android:text="@string/button2"
+         android:textSize="16dp" />
+
+     <Button
+         android:id="@+id/button3"
+         android:layout_width="150dp"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/button2"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="62dp"
+         android:background="#B8D2FF"
+         android:onClick="showDatePickerDialog"
+         android:text="@string/pick_date"
+         android:textSize="16dp" />
+     
+     
+ </RelativeLayout>

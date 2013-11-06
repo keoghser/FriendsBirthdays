@@ -1,0 +1,48 @@
+<resources>
+
+    <string name="app_name"> Friend\'s Birthdays</string>
+    <string name="welcome">Add or review your friend\'s birthdays</string>
+    <string name="menu_settings">Settings</string>
+    <string name="button1">Add New Birthday</string>
+    <string name="button2">Review Birthday</string>
+    <string name="title_activity_review_screen">Review Birthdays</string>
+    <string name="hint">search</string>
+    <string name="button3">Go!</string>
+    <string name="button4">Go!</string>
+    <string name="button5">Go!</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="fname">Name:</string>
+    <string name="fdate">Date of Birth:</string>
+    <string name="fnotification">Notification:</string>
+    <string name="faction">Action:</string>
+    <string name="fphonetext">Text Content:</string>
+    <string name="fphonenumber">Phone Number:</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_edit_screen">Add/Edit Birthday Details</string>
+    <string name="nameview">Name:</string>
+    <string name="dateview">Date of Birth:</string>
+    <string name="notificationview">Notification:</string>
+    <string name="actionview">Action:</string>
+    <string name="phoneview">Phone Number:</string>
+    <string name="pTextview">Text Content:</string>
+
+    <string-array name="action">
+        <item>Reminder</item>
+        <item>Prepare Text Message</item>
+        <item>Send Text Message</item>
+    </string-array>
+    <string-array name="notification">
+        <item>8pm on day before</item>
+        <item>7am on day</item>
+        <item>9am on day</item>
+        <item>11am on day</item>
+        <item>1pm on day</item>
+    </string-array>
+
+    <string name="button6">Save</string>
+    <string name="button7">Home</string>    
+    <string name="title_activity_notification_view">NotificationView</string>
+    <string name="title_activity_alarm_manager">Alarm Manager</string>
+    <string name="title_activity_notifications">NotificationsActivity</string>
+
+</resources>

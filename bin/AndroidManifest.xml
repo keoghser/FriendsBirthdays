@@ -1,0 +1,62 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.friendsbirthdaysVer6"
+    android:versionCode="2"
+    android:versionName="1.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+    
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:theme="@style/OpenTheme"
+        android:label="Birthday Reminder"  >
+        
+       <service android:name="com.friendsbirthdaysVer6.services.StartService" ></service>
+        
+        <activity
+            android:name="com.friendsbirthdaysVer6.Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+           android:name="com.friendsbirthdaysVer6.HomeScreen"
+           android:screenOrientation="portrait"
+           android:theme="@style/AppTheme">
+            	<intent-filter>
+            		<action android:name="android.intent.action.MAIN" />
+           			<category android:name="android.intent.category.DEFAULT" />
+        		</intent-filter>
+	    </activity>
+        <activity
+            android:name="com.friendsbirthdaysVer6.ReviewScreen"
+            android:label="@string/title_activity_review_screen"
+            android:screenOrientation="portrait" 
+            android:theme="@style/AppTheme">
+        </activity>
+        <activity
+            android:name="com.friendsbirthdaysVer6.EditScreen"
+            android:label="@string/title_activity_edit_screen"
+            android:screenOrientation="portrait" 
+            android:theme="@style/AppTheme">
+        </activity>          
+      
+       <receiver android:name="com.friendsbirthdaysVer6.services.AlarmManagerBroadcastReceiver" >
+        </receiver>
+        
+        <receiver android:name="com.friendsbirthdaysVer6.services.AutoStart" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        
+  </application>
+
+</manifest>

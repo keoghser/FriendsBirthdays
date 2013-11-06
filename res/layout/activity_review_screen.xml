@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   		android:layout_width="fill_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        android:background="#EAEAF2"
+        android:focusable="true"
+    	android:focusableInTouchMode="true">
+
+    <fragment
+        android:id="@+id/search_fragment"
+        android:name="com.friendsbirthdaysVer6.SearchFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp" />
+     
+     <fragment
+        android:id="@+id/scroller_fragment"       
+        android:name="com.friendsbirthdaysVer6.ScrollerFragment" 
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center"                 
+        android:layout_width="250dp"        
+        android:layout_height="250dp"/>
+
+     <Button
+         android:id="@+id/button8"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="right"
+         android:layout_marginRight="35dp"
+         android:layout_marginTop="25dp"
+         android:text="@string/button7"
+         android:background="#B8D2FF"
+         android:textSize="16dp"  />
+
+   </LinearLayout>
+
+
